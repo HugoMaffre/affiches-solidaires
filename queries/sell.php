@@ -1,5 +1,5 @@
 <?php 
-require 'connexion.php';
+require '../connexion.php';
 
 $id = $_POST[id];
 $PDO->query("SET NAMES 'utf8'");

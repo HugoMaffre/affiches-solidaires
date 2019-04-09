@@ -1,5 +1,5 @@
 <?php 
-require 'connexion.php';
+require '../connexion.php';
 
 $film = $_POST['film'];
 $cinema = $_POST['cinema'];
@@ -69,5 +69,5 @@ if( isset($prix) ){
 
 
 
-header("Location: index.php");
+header("Location: ../index.php");
 exit;

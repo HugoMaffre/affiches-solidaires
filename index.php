@@ -1,16 +1,15 @@
+<?php session_start(); ?>
 <!DOCTYPE html> 
 <html>
 <head>
-<meta name="robots" content="noindex">
-<meta charset="UTF-8">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Affiches solidaires</title>
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
-
+	<meta name="robots" content="noindex">
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Affiches solidaires</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 	<?php require 'connexion.php'; ?>
 <body>
@@ -32,7 +31,7 @@
 
 <div id="addnew-form">
 	<div class="closeform" id="close-addform"><i class="fas fa-chevron-up"></i></div>
-	<form action="./add.php" method="post">
+	<form action="./queries/add.php" method="post">
 		<p>Film :</p>
 		<input type="text" name="film">
 		<p>Cinéma :</p>
@@ -51,7 +50,7 @@
 <div id="update-form">
 	<div class="closeform" id="close-updateform"><i class="fas fa-chevron-up"></i></div>
 	<p class="title">Modifier l'affiche n°<span id="update-id"></span></p>
-	<form action="./update.php" method="post">
+	<form action="./queries/update.php" method="post">
 		<p>Film :</p>
 		<input type="text" name="film" id="update-film-field">
 		<p>Cinéma :</p>

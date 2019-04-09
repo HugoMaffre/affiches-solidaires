@@ -11,11 +11,10 @@ jQuery(document).ready(function() {
 		$('#datatable-affiches tbody').on('click', '.suppr', function () {
 			var id = $(this).data("affid");
 			var row = $(this).parent().parent();
-			console.log(row);
 			if (confirm('Etes-vous sûr de vouloir supprimer cette affiche ?')) {
 				$.ajax({
 					type: 'POST',
-					url: './delete.php',
+					url: './queries/delete.php',
 					data: {
 						id: id
 					},
@@ -37,7 +36,7 @@ jQuery(document).ready(function() {
 			if (confirm('Etes-vous sûr de vouloir vendre cette affiche ?')) {
 				$.ajax({
 					type: 'POST',
-					url: './sell.php',
+					url: './queries/sell.php',
 					data: {
 						id: id
 					},

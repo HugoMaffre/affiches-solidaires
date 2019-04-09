@@ -1,5 +1,5 @@
 <?php 
-require 'connexion.php';
+require '../connexion.php';
 
 $film = $_POST['film'];
 $cinema = $_POST['cinema'];
@@ -20,5 +20,5 @@ $req->execute(
     )
 );
 
-header("Location: index.php");
+header("Location: ../index.php");
 exit;
