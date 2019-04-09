@@ -157,3 +157,14 @@ form input{
 .suppr:hover, .edit:hover, .sell:hover{
     cursor: pointer;
 }
+
+/* page connexion */ 
+#connexion-form{
+    width: 375px;
+    border: 2px solid #dadada;
+    padding: 40px;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 150px;
+    box-sizing: border-box;
+}

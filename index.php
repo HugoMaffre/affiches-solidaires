@@ -19,9 +19,7 @@
 <header>
 	<h1>Les affiches solidaires</h1>
 	<div id="menu">
-		<div class="main-btn" id="connexionform">
-			Se connecter
-		</div>
+		<a class="main-btn" href="/affiches-solidaires/login.php">Connexion</a>
 		<div class="main-btn" id="addnew">
 			Ajouter une affiche
 		</div>
